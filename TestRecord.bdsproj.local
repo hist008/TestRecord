@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016-10-28 10:25:23.635.pas,C:\Users\Administrator.XZ-20140210GASR\Documents\Borland Studio Projects\Unit1.pas=E:\软件测试\录音测试\Unit1.pas</Transaction>
+    <Transaction>2016-10-28 10:25:23.635.dfm,C:\Users\Administrator.XZ-20140210GASR\Documents\Borland Studio Projects\Unit1.dfm=E:\软件测试\录音测试\Unit1.dfm</Transaction>
+    <Transaction>2016-10-28 10:25:25.030.bdsproj,C:\Users\Administrator.XZ-20140210GASR\Documents\Borland Studio Projects\Project1.bdsproj=E:\软件测试\录音测试\Project1.bdsproj</Transaction>
+    <Transaction>2016-10-28 10:26:08.693.pas,E:\软件测试\录音测试\Unit1.pas=E:\软件测试\录音测试\uFrmMain.pas</Transaction>
+    <Transaction>2016-10-28 10:26:08.693.dfm,E:\软件测试\录音测试\Unit1.dfm=E:\软件测试\录音测试\uFrmMain.dfm</Transaction>
+    <Transaction>2016-10-28 10:40:13.609.bdsproj,E:\软件测试\录音测试\Project1.bdsproj=E:\软件测试\录音测试\TestRecord.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

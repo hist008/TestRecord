@@ -1,0 +1,38 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = #24405#38899#27979#35797
+  ClientHeight = 104
+  ClientWidth = 297
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = #24494#36719#38597#40657
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 25
+  object btnStart: TButton
+    Left = 48
+    Top = 32
+    Width = 89
+    Height = 33
+    Caption = #24320#22987#24405#38899
+    TabOrder = 0
+    OnClick = btnStartClick
+  end
+  object btnStop: TButton
+    Left = 160
+    Top = 32
+    Width = 97
+    Height = 33
+    Caption = #20572#27490#24405#38899
+    TabOrder = 1
+    OnClick = btnStopClick
+  end
+end

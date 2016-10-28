@@ -1,0 +1,65 @@
+unit uFrmMain;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls,uMixerRecord;
+
+type
+  TFrmMain = class(TForm)
+    btnStart: TButton;
+    btnStop: TButton;
+    SaveDialog1: TSaveDialog;
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure btnStartClick(Sender: TObject);
+    procedure btnStopClick(Sender: TObject);
+  private
+    { Private declarations }
+    m_MixerRecord : TMixerRecord;
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmMain: TFrmMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmMain.btnStartClick(Sender: TObject);
+begin
+  m_MixerRecord.Start;
+end;
+
+procedure TFrmMain.btnStopClick(Sender: TObject);
+var
+  strFileName:string ;
+begin
+  if  not SaveDialog1.Execute(0) then
+    exit ;
+  strFileName := SaveDialog1.FileName ;
+  m_MixerRecord.Stop;
+  if FileExists(strFileName) then
+  begin
+    DeleteFile(strFileName);
+  end;
+  
+  m_MixerRecord.GetRecordStream.SaveToFile(strFileName);
+  ShowMessage('Â¼ÒôÍê±Ï');
+end;
+
+procedure TFrmMain.FormCreate(Sender: TObject);
+begin
+  m_MixerRecord := TMixerRecord.Create;
+end;
+
+procedure TFrmMain.FormDestroy(Sender: TObject);
+begin
+  m_MixerRecord.Stop ;
+  m_MixerRecord.Free;
+end;
+
+end.
